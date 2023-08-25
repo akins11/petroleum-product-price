@@ -1,0 +1,226 @@
+// scss-docs-start
+$white: #FCFCFC !default;
+// scss-docs-end
+
+/*-- scss:defaults --*/
+$h2-font-size: 1.6rem !default;
+
+$header-font-weight: 500 !default;
+
+$body-bg: $white !default;
+
+$content-margin-left: 10px !default;
+
+$color-blue: #1E88E5;
+$color-blue-light: #64B5F6;
+$color-red: #8B0000;
+$color-red-light: #EF233C;
+$color-green: #54FF9F;
+$color-green-light: #C1FFC1;
+
+$color-text-white: #FCFCFC;
+
+
+/*-- scss:rules --*/
+h1, h2, h3, h4, h5, h6 {
+  color: #2B4141;
+}
+
+#quarto-content {
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    background-color: rgb(207 207 207 / 26%);
+}
+
+.navbar-dark .navbar-nav .show>.nav-link, 
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .nav-link {
+    color: #888888;
+    
+    &:hover {
+      color: #5C5C5C;
+    }
+}
+
+.navbar-dark .navbar-nav .show>.nav-link, 
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #555555;
+}
+
+.navbar-dark .navbar-brand {
+    color: #c3c5d3;
+}
+
+.home-body {
+  background-color: transparent;
+  max-height: 100vh;
+  color: #FCFCFC;
+  //position: relative;
+  
+  .date {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .link {
+    text-decoration: none;
+    background: transparent;
+    
+    .page-link {
+      position: relative;
+      border: none;
+      border-bottom: 1px solid #FCFCFC;
+      background: transparent;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        border-bottom: 3px solid #FCFCFC;
+        transition: width 0.5s ease-in-out;
+      }
+      
+      &:hover:after {
+        width: 100%;
+        border-bottom-color: #FFFFFF;
+      }
+      
+      .display-custom {
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #FCFCFC;
+        
+        &:hover {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  
+  .about-link {
+    text-decoration: none;
+    background: transparent;
+    
+    .about-text {
+      color: #E5E5E5;
+      font-weight: 500;
+      letter-spacing: 2px;
+      transition: .5s ease;
+      margin-left: 5rem;
+      
+      &:hover {
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  
+  &.sub-two {
+    font-size: 1.2rem !important;
+  }
+}
+
+.text-summary {
+  color: #888888;
+}
+
+.red-color {
+  color: $color-red;
+}
+
+.green-color {
+  color: $color-green;
+}
+
+.a-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  
+  .label {
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: $color-blue;
+    color: $color-text-white;
+    font-weight: 400;
+    border-radius: 3px;
+    transition: .3s ease;
+    
+    &:hover {
+      background-color: $color-blue-light;
+      color: #000000;
+    }
+  }
+  
+  .pms-summary-container {
+    
+  }
+}
+
+.highest-lowest {
+  background-color: #FFFFFF;
+  
+  .ce-header{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.8rem;
+    letter-spacing: 1px;
+    color: #6E6E6E;
+  }
+}
+
+.child-scrollbar {
+  ::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FCFCFC;
+    border-radius: 4px;
+  }
+    
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FCFCFC;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #FCFCFC;;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #A0A0A0;
+border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #808080;
+}
+
+::-webkit-scrollbar-track {
+background: #f2f2f2;;
+}

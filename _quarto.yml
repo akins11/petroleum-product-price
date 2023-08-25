@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Petroleum Product Price"
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: PMS.qmd
+        text: PMS
+      - href: diesel.qmd
+        text: Diesel
+      - href: LPG.qmd
+        text: LPG
+      - href: kerosene.qmd
+        text: Kerosene
+    right:
+      - href: about.qmd
+        text: About
+      - icon: github
+        href: https://github.com/akins11
+        aria-label: GitHub
+    background: "#FCFCFC"
+    foreground: dark
+
+format:
+  html:
+    theme: 
+      - Zephyr
+      - custom.scss
+    css: styles.css
+    toc: true
+    page-layout: custom
+
+
+
