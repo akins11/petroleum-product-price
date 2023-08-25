@@ -598,7 +598,8 @@ overall_year_average <- function(df, other_group = NULL) {
         htmltools::span("YoY", "aria-hidden" = "true", title = "Year-on-Year"),
       ),
       align = "center",
-      maxWidth = 150,
+      maxWidth = 180,
+      minWidth = 170,
       cell = \(value) trend_badge(value)
     ),
     
@@ -729,7 +730,8 @@ single_overall_state_year_average <- function(df) {
               htmltools::span("YoY", "aria-hidden" = "true", title = "Year on Year"),
             ),
             align = "center",
-            maxWidth = 150,
+            maxWidth = 180,
+            minWidth = 170,
             cell = \(value) trend_badge(value)
           ),
           
@@ -891,7 +893,8 @@ m_overall_state_year_average <- function(df, gp_var) {
               htmltools::span("YoY", "aria-hidden" = "true", title = "Year on Year"),
             ),
             align = "center",
-            maxWidth = 150,
+            maxWidth = 180,
+            minWidth = 170,
             cell = \(value) trend_badge(value)
           ),
           
@@ -1768,6 +1771,8 @@ single_yoy_table <- function(df) {
           htmltools::span("YoY", "aria-hidden" = "true", title = "Year-on-Year"),
         ),
         align = "center",
+        maxWidth = 180,
+        minWidth = 170,
         cell = \(value) trend_badge(value)
       ),
       
@@ -1880,6 +1885,8 @@ multi_yoy_table <- function(df, gp_var) {
               htmltools::span("YoY", "aria-hidden" = "true", title = "Year-on-Year"),
             ),
             align = "center",
+            maxWidth = 180,
+            minWidth = 170,
             cell = \(value) trend_badge(value)
           ),
           
@@ -1980,6 +1987,8 @@ single_mom_table <- function(df) {
           htmltools::span("MoM", "aria-hidden" = "true", title = "Month-on-Month"),
         ),
         align = "center",
+        maxWidth = 180,
+        minWidth = 170,
         cell = \(value) trend_badge(value)
       ),
       
@@ -2094,6 +2103,8 @@ multi_mom_table <- function(df, gp_var) {
               htmltools::span("MoM", "aria-hidden" = "true", title = "Month-on-Month"),
             ),
             align = "center",
+            maxWidth = 180,
+            minWidth = 170,
             cell = \(value) trend_badge(value)
           ),
           
