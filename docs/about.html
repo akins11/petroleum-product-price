@@ -63,96 +63,66 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Petroleum Product Price</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./PMS.html" rel="" target="">
- <span class="menu-text">PMS</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./diesel.html" rel="" target="">
- <span class="menu-text">Diesel</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./LPG.html" rel="" target="">
- <span class="menu-text">LPG</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./kerosene.html" rel="" target="">
- <span class="menu-text">Kerosene</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
- <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/akins11" rel="" target=""><i class="bi bi-github" role="img" aria-label="GitHub">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools">
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom">
 <!-- sidebar -->
 <!-- margin-sidebar -->
 <!-- main -->
 
 
 
-<p class="display-6">
+<style>
+body {
+  background-image: url("www/rig.jpg");
+  background-size: cover;
+  background-repeat: no-reapeat;
+}
+</style>
+<div class="grid">
+<div class="g-col-6">
+<p class="display-6 text-dark">
 About
 </p>
-<div class="container">
-<div class="border border-black rounded p-2">
-<h3 class="sub-title">
+</div>
+<div class="g-col-6 d-flex justify-content-end">
+<div class="about-home">
+<a href="./index.html" class="link">
+<div class="content">
+<p class="display-custom display-6">
+Home
+</p>
+</div>
+</a><p><a href="./index.html" class="link"></a></p>
+</div>
+</div>
+</div>
+<div class="container about">
+<div class="p-2 blur">
+<h3 class="sub-title text-dark">
 Petroleum Products Price Report (January 2020 - June 2023)
 </h3>
-<p class="text-summary">
+<p class="text-summary text-dark">
 This report delves into the intricate movements of key petroleum products across Nigeria’s 36 states and the Federal Capital Territory (FCT). The exploration encompasses popular fuels including PMS, Diesel, LPG in both 5kg and 12kg variants, as well as Kerosene in 1-liter and 1-gallon quantities.
 </p>
 <h5 class="sub-title sub-two">
 Unveiling Price Movements Across Nigeria:
 </h5>
-<p class="text-summary">
+<p class="text-summary text-dark">
 In this report, you will find a comprehensive summary of price trends that captures the dynamic landscape of petroleum product prices across Nigeria’s diverse regions. Spanning from bustling city centers to the tranquil rural outskirts, the changes in prices have been dissected. This detailed analysis illuminates the interplay of local factors and broader market dynamics, shedding light on the intricate journey of these essential commodities.
 </p>
 <h5 class="sub-title sub-two">
 Data Source and Analytical Approach:
 </h5>
-<p class="text-summary">
+<p class="text-summary text-dark">
 The foundation of this analysis is robust data sourced from the <a href="https://www.nigerianstat.gov.ng">National Bureau of Statistics (NBS)</a>, ensuring accuracy and reliability in our findings. Armed with this data, we employed various analytical techniques, utilizing the programming language R to unearth meaningful insights from the wealth of information.
 </p>
 <h5 class="sub-title sub-two">
 Crafting the Report:
 </h5>
-<p class="text-summary">
+<p class="text-summary text-dark">
 This report has been meticulously crafted using the <a href="https://quarto.org">quarto</a> framework and R, combining data visualization using <a href="https://plotly.com/r/">plotly</a>, tabular summarise using <a href="https://glin.github.io/reactable/">reactable</a>, statistical insights, and articulate narratives to provide a holistic view of the petroleum product pricing landscape.
 </p>
 </div>

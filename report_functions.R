@@ -599,7 +599,7 @@ overall_year_average <- function(df, other_group = NULL) {
       ),
       align = "center",
       maxWidth = 180,
-      minWidth = 170,
+      minWidth = 165,
       cell = \(value) trend_badge(value)
     ),
     
@@ -731,7 +731,7 @@ single_overall_state_year_average <- function(df) {
             ),
             align = "center",
             maxWidth = 180,
-            minWidth = 170,
+            minWidth = 165,
             cell = \(value) trend_badge(value)
           ),
           
@@ -894,7 +894,7 @@ m_overall_state_year_average <- function(df, gp_var) {
             ),
             align = "center",
             maxWidth = 180,
-            minWidth = 170,
+            minWidth = 165,
             cell = \(value) trend_badge(value)
           ),
           
