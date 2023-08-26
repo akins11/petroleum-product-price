@@ -109,40 +109,8 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   
-  .home-about-link {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    
-    .about-link {
-      text-decoration: none;
-      background: transparent;
-      
-      .about-text {
-        color: #FFFFFF;
-        font-weight: 500;
-        letter-spacing: 2px;
-        transition: .5s ease;
-        margin-left: 5rem;
-        border-bottom: 1px solid #FFFFFF;
-        
-        &:hover {
-          color: #FFFFFF;
-          border-bottom-color: #FFFFFF;
-          }
-        }
-      }
-    }
 }
 
-@media screen and (max-width: 600px) {
-  .home-body {
-    .home-about-link {
-      bottom: 0;
-      right: 73%;
-    }
-  }
-}
 
 
 
