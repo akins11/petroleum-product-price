@@ -109,23 +109,41 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   
-  .about-link {
-    text-decoration: none;
-    background: transparent;
+  .home-about-link {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
     
-    .about-text {
-      color: #E5E5E5;
-      font-weight: 500;
-      letter-spacing: 2px;
-      transition: .5s ease;
-      margin-left: 5rem;
+    .about-link {
+      text-decoration: none;
+      background: transparent;
       
-      &:hover {
+      .about-text {
         color: #FFFFFF;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: .5s ease;
+        margin-left: 5rem;
+        border-bottom: 1px solid #FFFFFF;
+        
+        &:hover {
+          color: #FFFFFF;
+          border-bottom-color: #FFFFFF;
+          }
+        }
       }
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .home-body {
+    .home-about-link {
+      bottom: 0;
+      right: 73%;
     }
   }
 }
+
 
 
 .sub-title {
@@ -135,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   
   &.sub-two {
     font-size: 1.2rem !important;
+    color: #000000 !important;
   }
 }
 
@@ -204,6 +223,45 @@ h1, h2, h3, h4, h5, h6 {
   
   ::-webkit-scrollbar-track {
     background: #FCFCFC;;
+  }
+}
+
+.about-home {
+  .link {
+    text-decoration: none;
+    
+    .content {
+      text-align: center;
+      
+      .display-custom {
+        //font-size: 1.8rem;
+        //font-weight: 500;
+        letter-spacing: 2px;
+        color: #000000;
+        border-bottom: 1px solid #000000;
+        transition: .5s ease;
+        
+        &:hover {
+          color: #575757;
+          border-bottom: 1px solid #575757;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  
+  .blur {
+    background-color: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+  }
+  
+  a {
+    color: #080808;
   }
 }
 
